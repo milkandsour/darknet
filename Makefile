@@ -103,7 +103,7 @@ clean:
 install:
 	mkdir -p $(PREFIX)/include/darknet
 	cp darknet.a $(PREFIX)/lib/libdarknet.a
-	cp ${HEADERS} $(PREFIX)/include/darknet
+	cp ${HEADERS} include/darknet.h $(PREFIX)/include/darknet
 
 .PHONY: uninstall
 
