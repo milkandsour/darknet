@@ -10,7 +10,6 @@ typedef struct{
     float dx, dy, dw, dh;
 } dbox;
 
-box float_to_box(float *f, int stride);
 float box_rmse(box a, box b);
 dbox diou(box a, box b);
 box decode_box(box b, box anchor);
