@@ -1,6 +1,6 @@
 GPU=0
 CUDNN=0
-OPENCV=0
+OPENCV=1
 OPENMP=0
 DEBUG=0
 
@@ -109,7 +109,7 @@ clean:
 
 install:
 	mkdir -p $(PREFIX)/include/darknet
-	cp darknet.a $(PREFIX)/lib/libdarknet.a
+	cp libdarknet.a $(PREFIX)/lib/libdarknet.a
 	cp ${HEADERS} include/darknet.h $(PREFIX)/include/darknet
 
 .PHONY: uninstall
